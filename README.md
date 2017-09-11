@@ -1,5 +1,4 @@
 
-
 ## Required ENV variables:
   ```
   AWS_ACCESS_KEY
@@ -9,6 +8,15 @@
 #### You can change de port with ENV Variable
 ```
 PORT
+```
+
+### To start
+
+```
+git clone git@github.com:sago2k8/multer-s3-micro.git
+cd multer-s3-micro
+npm install
+npm start
 ```
 ### for upload file the input name should be 'file' and enctype should be 'multipart/form-data'
 ```html
