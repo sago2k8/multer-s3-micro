@@ -27,7 +27,7 @@ const storage = multerS3({
   }
 })
 
-const upload = multer({ storage: storage }).single('picture')
+const upload = multer({ storage: storage }).single('file')
 
 hash.set('POST /', async (req, res) => {
   let src

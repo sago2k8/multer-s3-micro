@@ -1,12 +1,35 @@
 
 
-## required env variables:
+## Required ENV variables:
   ```
   AWS_ACCESS_KEY
   AWS_SECRET_KEY
   AWS_BUCKET_NAME
   ```
+#### You can change de port with ENV Variable
+```
+PORT
+```
+### for upload file the input name should be 'file' and enctype should be 'multipart/form-data'
+```html
+<form enctype="multipart/form-data"  id="formUpload"  method="post">
+    <div id="fileName" >
+      <span>upload picture</span>
+      <input name="file" id="file" type="file" />
+    </div>
+    <button type="submit" > upload</button>
+    <script>
 
+    </script>
+  </form>
+```
+
+### return
+```
+{"url": "https://YOUR_BUCKET.s3.amazonaws.com/YOUR_FILE"}
+```
+
+### Example file upload json:
 ```  read: [Function],
   file:
    { fieldname: 'picture',
