@@ -1,11 +1,11 @@
 
 
-##required env variables:
-  `
+## required env variables:
+  ```
   AWS_ACCESS_KEY
   AWS_SECRET_KEY
   AWS_BUCKET_NAME
-  `
+  ```
 
 ```  read: [Function],
   file:
